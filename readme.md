@@ -51,4 +51,7 @@ npm run server
 ```
 
 ## Deployed Link
-[]()
+[https://stripe-payment-gateway.onrender.com](https://stripe-payment-gateway.onrender.com)
+
+## Postman Link
+[https://www.postman.com/vivbelwal/workspace/stripe-payment/collection/24383044-d538bc54-5bb4-489b-a0e1-4f1225ceef01?action=share&creator=24383044](https://www.postman.com/vivbelwal/workspace/stripe-payment/collection/24383044-d538bc54-5bb4-489b-a0e1-4f1225ceef01?action=share&creator=24383044)
