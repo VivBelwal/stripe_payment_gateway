@@ -3,6 +3,7 @@ require("dotenv").config();
 const stripe = require("stripe")(process.env.SECRET_KEY);
 const Payment = require("../Model/PaymentSchema.model");
 
+// Create new Payment Intent Logic
 const createPaymentIntent = async (req, res, next) => {
   try {
     const { email, amount } = req.body;
@@ -64,6 +65,7 @@ if(!email || !amount){
   }
 };
 
+// Capture a Payment Intent
 const capturePaymentIntent = async (req, res) => {
   try {
     const { id } = req.params;
@@ -85,6 +87,7 @@ const capturePaymentIntent = async (req, res) => {
   }
 };
 
+// Create and check a refund
 const createRefund = async (req, res) => {
   try {
     const { id } = req.params;
@@ -99,6 +102,7 @@ const createRefund = async (req, res) => {
   }
 };
 
+// Get all the created Payment Intents
 const allIntents = async (req, res) => {
   try {
     const paymentIntents = await stripe.paymentIntents.list();
